@@ -56,6 +56,7 @@ function myLength(array) {
 
 /**
  * Array to String!  Which, unfortunately, is not an array in javascript...
+ * and needs to be console.logged in repl
  */
 function crewRoster(crew) {
   return crew.reduce((acc, potentialCylon, index) => {
