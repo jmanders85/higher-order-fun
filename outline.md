@@ -4,7 +4,9 @@
 
 Functional programming is built on the idea that functions in programming should
 behave like functions in mathematics. f(x) = x + 2 will always return 4 when
-provided the argument 2.  That predictability is not to be underestimated!
+provided the argument 2.  That predictability is not to be underestimated and is
+known as **Referential Transparency**!  Probably guaranteed a job if you say
+that in an interview.
 
 ## Keep It Pure
 
@@ -41,8 +43,19 @@ use the reduce method.
 ## More Resources
 
 Whew!  That was overwhelming!  My favorite way to practice and learn functional
-programming is to practice in languages that force you to be functional!
+programming is to practice in languages that force you to be functional or to
+use JavaScript libraries that make the functional approach easy as 3.14!
 
+- [React](https://facebook.github.io/react/tutorial/tutorial.html)
+  - React is one of the many frameworks to adopt the idea that components should
+    be modular and reusable.  This encourages developers to approach UI design
+    in a nice and functional way!  Plus it's [taking over web development](https://medium.freecodecamp.com/yes-react-is-taking-over-front-end-development-the-question-is-why-40837af8ab76)
+- [Ramda](http://ramdajs.com/)
+  - A library designed specifically for a functional programming style.  I've
+    not used it (but I use [Lodash](https://lodash.com/) all the time at work),
+    and in researching this talk I saw a sassy comment in an article I read about
+    how necessary it is to include Ramda in any discussion about functional
+    programming in JavaScript.  So, here it is.
 - [Functional Programming in Erlang](https://www.futurelearn.com/courses/functional-programming-erlang/)
   - Loving this course right now.  Erlang is one of my favorite 'weekend'
     languages and this course is a great intro to functional programming!
