@@ -54,8 +54,9 @@ use the reduce method.
 
 - Referential Transparency:  A function is **referentially transparent** if it
   always returns the same result given the same argument.
-- Pure Function:  A function is **pure** if, when run, does not change the state
-  of the program in which it is called.
+- Pure Function:  A function is **pure** if, when run, does not have any side effects.
+  (eg. altering a variable outside of its scope like `imNotReferentiallyTransparent` does).
+  A pure function could be moved to any other module or file and behave the same.
 - Higher Order Function:  A function is **higher order** if it takes another function
   as an argument.
 
