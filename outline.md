@@ -2,11 +2,21 @@
 
 ## Yay Math!
 
-Functional programming is built on the idea that functions in programming should
-behave like functions in mathematics. f(x) = x + 2 will always return 4 when
-provided the argument 2.  That predictability is not to be underestimated and is
-known as **Referential Transparency**!  Probably guaranteed a job if you say
-that in an interview.
+Functional programming is built on the idea that software is composed out of functions
+and that those functions should behave like functions in mathematics. f(x) = x + 2
+will always return 4 when provided the argument 2.  That predictability is not to be
+underestimated and is known as **Referential Transparency**!  Probably guaranteed
+a job if you say that in an interview.
+
+```JavaScript
+let counter = 0;
+
+function imNotReferentiallyTransparent(x) {
+  counter++;
+
+  return x + counter;
+}
+```
 
 ## Keep It Pure
 
@@ -40,6 +50,15 @@ list and turn it into some other object (or we just want to be really fancy), we
 use the reduce method.
 [//]: # (reductoAdAbsurdium.js)
 
+## Glossary
+
+- Referential Transparency:  A function is **referentially transparent** if it
+  always returns the same result given the same argument.
+- Pure Function:  A function is **pure** if, when run, does not change the state
+  of the program in which it is called.
+- Higher Order Function:  A function is **higher order** if it takes another function
+  as an argument.
+
 ## More Resources
 
 Whew!  That was overwhelming!  My favorite way to practice and learn functional
@@ -56,6 +75,10 @@ use JavaScript libraries that make the functional approach easy as 3.14!
     and in researching this talk I saw a sassy comment in an article I read about
     how necessary it is to include Ramda in any discussion about functional
     programming in JavaScript.  So, here it is.
+- [Immutable.js](https://facebook.github.io/immutable-js/)
+  - From the Readme: 'Much of what makes application development difficult is tracking
+    mutation and maintaining state. Developing with immutable data encourages you to
+    think differently about how data flows through your application.'
 - [Functional Programming in Erlang](https://www.futurelearn.com/courses/functional-programming-erlang/)
   - Loving this course right now.  Erlang is one of my favorite 'weekend'
     languages and this course is a great intro to functional programming!

@@ -28,7 +28,7 @@ function fuseNames1() {
     USERS[i] = {
       name: USERS[i].lastName + ', ' + USERS[i].firstName,
       hobby: USERS[i].hobbies[0]
-    }
+    };
   }
 }
 

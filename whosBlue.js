@@ -21,7 +21,7 @@ const USERS = [
 ];
 
 /**
- * GAHHHHH
+ * GAHHHHH! What's happened to my USERS array
  */
  function whosBlue1() {
   for (let i = 0; i < USERS.length; i++) {
